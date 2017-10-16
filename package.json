@@ -1,0 +1,25 @@
+{
+  "name": "vue-components-in-express",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Sample code to support blog post 'Using Vue Components in your Express app' at https://mindthecode.com/using-vue-components-in-your-express-app/",
+  "author": "Stef van den Ham <stef@mindthecode.com>",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "watchify -vd -p browserify-hmr -t vueify -e public/javascripts/main.js -o public/javascripts/bundle.js & node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "browserify-hmr": "^0.3.5",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "node-sass": "^4.5.3",
+    "pug": "~2.0.0-beta6",
+    "serve-favicon": "~2.3.0",
+    "vue": "^2.5.0",
+    "vueify": "^9.4.1",
+    "watchify": "^3.9.0"
+  }
+}
